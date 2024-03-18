@@ -40,3 +40,7 @@ app.post("/bfhl", async (req, res) => {
   };
   res.send(options);
 });
+
+app.listen(3000,()=>{
+  console.log("Server started");
+})
