@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
-
-app.post("/data", async (req, res) => {
+app.get('/',(req,res)=>{
+  res.send("Hello");
+})
+app.post("/bfhl", async (req, res) => {
   const { arr } = req.body;
   let char = [];
   for (let i = 0; i < arr.length; i++) {
